@@ -139,3 +139,15 @@ const hideCard = function (event) {
   const del = event.closest(".col-md-4");
   del.remove();
 };
+
+const formHandler = function () {
+  const form = document.getElementById("main-form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const inputS = document.getElementById("search-img").value;
+
+    form.reset();
+  });
+};
+
+formHandler();
